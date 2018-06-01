@@ -210,6 +210,7 @@ Makefile: ../ActuatorControl/ActuatorControl.pro C:/Qt/5.9.3/mingw53_32/mkspecs/
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/qt_config.prf \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/win32-g++/qmake.conf \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/exclusive_builds.prf \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/toolchain.prf \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/default_pre.prf \
@@ -217,20 +218,25 @@ Makefile: ../ActuatorControl/ActuatorControl.pro C:/Qt/5.9.3/mingw53_32/mkspecs/
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/resolve_config.prf \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/exclusive_builds_post.prf \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/default_post.prf \
-		C:/Qt/5.9.3/mingw53_32/mkspecs/features/win32/console.prf \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/qml_debug.prf \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/precompile_header.prf \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/warn_on.prf \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/qt.prf \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/resources.prf \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/moc.prf \
+		C:/Qt/5.9.3/mingw53_32/mkspecs/features/win32/opengl.prf \
+		C:/Qt/5.9.3/mingw53_32/mkspecs/features/uic.prf \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/qmake_use.prf \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/file_copies.prf \
+		C:/Qt/5.9.3/mingw53_32/mkspecs/features/win32/windows.prf \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/testcase_targets.prf \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/exceptions.prf \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/yacc.prf \
 		C:/Qt/5.9.3/mingw53_32/mkspecs/features/lex.prf \
 		../ActuatorControl/ActuatorControl.pro \
+		C:/Qt/5.9.3/mingw53_32/lib/qtmaind.prl \
+		C:/Qt/5.9.3/mingw53_32/lib/Qt5Widgets.prl \
+		C:/Qt/5.9.3/mingw53_32/lib/Qt5Gui.prl \
 		C:/Qt/5.9.3/mingw53_32/lib/Qt5Core.prl
 	$(QMAKE) -o Makefile ..\ActuatorControl\ActuatorControl.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/spec_pre.prf:
@@ -382,6 +388,7 @@ C:/Qt/5.9.3/mingw53_32/mkspecs/features/qt_functions.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/qt_config.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/win32-g++/qmake.conf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/spec_post.prf:
+.qmake.stash:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/exclusive_builds.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/toolchain.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/default_pre.prf:
@@ -389,20 +396,25 @@ C:/Qt/5.9.3/mingw53_32/mkspecs/features/win32/default_pre.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/resolve_config.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/exclusive_builds_post.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/default_post.prf:
-C:/Qt/5.9.3/mingw53_32/mkspecs/features/win32/console.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/qml_debug.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/precompile_header.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/warn_on.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/qt.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/resources.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/moc.prf:
+C:/Qt/5.9.3/mingw53_32/mkspecs/features/win32/opengl.prf:
+C:/Qt/5.9.3/mingw53_32/mkspecs/features/uic.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/qmake_use.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/file_copies.prf:
+C:/Qt/5.9.3/mingw53_32/mkspecs/features/win32/windows.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/testcase_targets.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/exceptions.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/yacc.prf:
 C:/Qt/5.9.3/mingw53_32/mkspecs/features/lex.prf:
 ../ActuatorControl/ActuatorControl.pro:
+C:/Qt/5.9.3/mingw53_32/lib/qtmaind.prl:
+C:/Qt/5.9.3/mingw53_32/lib/Qt5Widgets.prl:
+C:/Qt/5.9.3/mingw53_32/lib/Qt5Gui.prl:
 C:/Qt/5.9.3/mingw53_32/lib/Qt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\ActuatorControl\ActuatorControl.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"

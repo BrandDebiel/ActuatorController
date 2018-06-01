@@ -14,9 +14,13 @@ class Actuator : public QObject
         void setOffset(long offset);
         void setLimit(long limit);
         void setDirection(bool direction);
-        void setSPeed(quint16 speed);
+        void setSpeed(quint16 speed);
+        void setPosition(long position);
+        void setSetpointPosition(long position);
+        void makeStep();
 
-        long int getPosition();
+        long getPosition();
+        long getSetPointPosition();
         bool getDirection();
         quint16 getSpeed();
         bool isHomed();
@@ -25,8 +29,10 @@ class Actuator : public QObject
 
     public slots:
 
+
     private:
         long m_position;
+        long m_setPointPosition;
         long m_offset;
         long m_limit;
         quint16 m_speed;
@@ -39,7 +45,7 @@ class Actuator : public QObject
 
 
         void setHomed(bool isHomed);
-        void makeStep();
+
 		
 	private slots:
 
